@@ -5,17 +5,41 @@ this is for when you already did the actual server installation (os and stuff) a
 ## This repo helps you go from
 
 this:
-[img 1/before]
+
+![Before](/assets/before.jpg "Terminal Before")
+
 to this:
-[img 2/after]
 
-with this:
+![After](/assets/after.jpg "Terminal after")
 
-### Git-free install
+by doing this:
+
+## Git-free install
 
 ```bash
-# run:
-cd; curl -#L <https://github.com/stefanlachmann/minimal-server-setup/tarball/main> | tar -xzv --strip-components 1 --exclude={README.md,assets,LICENSE}
+cd; 
+curl -#L https://github.com/stefanlachmann/minimal-server-setup/tarball/main | tar -xzv --strip-components 1 --exclude={README.md,assets,LICENSE}
 ```
 
-then run the `setup.sh` when you are in you root folder
+then run the `bash setup.sh` when you are in you root/home folder
+
+and you will get:
+
+```bash
+auto-ls  -  ls by default when you use `cd`
+# some aliases
+alias c="clear"
+alias v="vim"
+alias cp="cp -rv"
+alias mkd="mkdir -v"
+alias e="exit"
+alias mv="mv -v"
+
+alias la='ls -A'
+alias l='ls -CF'
+alias lsa='ls -laH'
+alias ll='ls -l'
+```
+
+and the bash.prompt from above
+ Screenshot: <http://i.imgur.com/EkEtphC.png>
